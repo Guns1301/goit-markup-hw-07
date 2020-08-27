@@ -1,0 +1,75 @@
+/* <!--Преимушества--> */
+
+.margin-top {
+  padding-top: 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+
+.feature-list > .item {
+  width: calc((100% - 90px) / 4);
+  display: inline;
+  padding: 0;
+}
+
+/* иконки в преимуществах */
+.feature-list .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item.icon-antena::before {
+  background-image: url(../images/Vector.svg);
+}
+.item.icon-clock::before {
+  background-image: url(../images/Vector-2.svg);
+}
+.item.icon-comp::before {
+  background-image: url(../images/Vector-3.svg);
+}
+.item.icon-astro::before {
+  background-image: url(../images/Vector-4.svg);
+}
+
+.features-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.section .description {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
