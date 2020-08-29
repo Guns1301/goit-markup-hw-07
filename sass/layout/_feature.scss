@@ -17,6 +17,29 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  & .item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  & .item.icon-antena::before {
+    background-image: url(../images/Vector.svg);
+  }
+  .item.icon-clock::before {
+    background-image: url(../images/Vector-2.svg);
+  }
+  .item.icon-comp::before {
+    background-image: url(../images/Vector-3.svg);
+  }
+  .item.icon-astro::before {
+    background-image: url(../images/Vector-4.svg);
+  }
 }
 
 .container {
@@ -31,30 +54,7 @@
 }
 
 /* иконки в преимуществах */
-.feature-list .item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.item.icon-antena::before {
-  background-image: url(../images/Vector.svg);
-}
-.item.icon-clock::before {
-  background-image: url(../images/Vector-2.svg);
-}
-.item.icon-comp::before {
-  background-image: url(../images/Vector-3.svg);
-}
-.item.icon-astro::before {
-  background-image: url(../images/Vector-4.svg);
-}
-
-.features-title {
+.feature-list .features-title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
