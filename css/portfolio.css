@@ -445,6 +445,10 @@ a {
   height: 100%;
 }
 
+.menu-nav .item {
+  position: relative;
+}
+
 .menu-nav .current::after {
   position: absolute;
   content: '';
@@ -454,10 +458,6 @@ a {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-}
-
-.menu-nav .item {
-  position: relative;
 }
 
 .menu-nav .item + .item {
@@ -590,8 +590,6 @@ a {
   margin-left: 50px;
 }
 
-/* Portfolio */
-/* Flex container */
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,13 +605,13 @@ a {
   border: 1px solid #eeeeee;
 }
 
+.container-element:nth-child(3n + 0) {
+  margin-right: 0;
+}
+
 .container-element:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.container-element:nth-child(3n + 0) {
-  margin-right: 0;
 }
 
 .list-link {
@@ -700,7 +698,6 @@ a {
   margin: 0;
 }
 
-/* button */
 .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,7 +709,7 @@ a {
   margin-bottom: 50px;
 }
 
-.button-container .item {
+.button-container.item {
   text-align: center;
   display: inline-block;
 }
@@ -743,7 +740,6 @@ a {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* список соц сетей */
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;

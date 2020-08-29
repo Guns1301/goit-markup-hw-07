@@ -21,6 +21,10 @@
   display: flex;
   height: 100%;
 
+  & .item {
+    position: relative;
+  }
+
   & .current::after {
     position: absolute;
     content: '';
@@ -31,10 +35,6 @@
     border-radius: 2px;
     background-color: $accent-color;
   }
-}
-
-.menu-nav .item {
-  position: relative;
 }
 
 .menu-nav .item + .item {

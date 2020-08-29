@@ -1,9 +1,10 @@
-/* clients */
-/* Постоянные клиенты */
-
 .clients .item {
   display: block;
   margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients .list {
@@ -32,7 +33,4 @@
 .client-link-logo {
   display: block;
   fill: currentColor;
-}
-.clients-item:not(:last-child) {
-  margin-right: 30px;
 }

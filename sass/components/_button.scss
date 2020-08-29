@@ -1,15 +1,13 @@
-/* button */
-
 .button-container {
   display: flex;
   justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
-}
 
-.button-container .item {
-  text-align: center;
-  display: inline-block;
+  &.item {
+    text-align: center;
+    display: inline-block;
+  }
 }
 
 .btn {

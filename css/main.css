@@ -540,6 +540,10 @@ a {
   height: 100%;
 }
 
+.menu-nav .item {
+  position: relative;
+}
+
 .menu-nav .current::after {
   position: absolute;
   content: '';
@@ -549,10 +553,6 @@ a {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-}
-
-.menu-nav .item {
-  position: relative;
 }
 
 .menu-nav .item + .item {
@@ -647,7 +647,6 @@ a {
   /* outline: 1px solid brown; */
 }
 
-/* button */
 .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,7 +658,7 @@ a {
   margin-bottom: 50px;
 }
 
-.button-container .item {
+.button-container.item {
   text-align: center;
   display: inline-block;
 }
@@ -774,7 +773,6 @@ a {
   color: #757575;
 }
 
-/* Чем мы занимаемся */
 .ourwork-title {
   font-weight: 700;
   font-size: 14px;
@@ -792,7 +790,7 @@ a {
   display: flex;
 }
 
-.work-list .item:not(:last-child) {
+.work-list.item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -814,6 +812,10 @@ a {
   margin-right: 30px;
 }
 
+.work-list .item:last-child {
+  margin-right: 0;
+}
+
 .work-list .item::after {
   position: absolute;
   content: '';
@@ -822,10 +824,6 @@ a {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.work-list .item:last-child {
-  margin-right: 0;
 }
 
 /* заголовок */
@@ -843,7 +841,6 @@ a {
   color: #ffffff;
 }
 
-/* Наша команда */
 .background {
   background-color: #f5f4fa;
 }
@@ -907,10 +904,12 @@ a {
   margin-right: 0;
 }
 
-/* clients */
-/* Постоянные клиенты */
 .clients .item {
   display: block;
+  margin-right: 30px;
+}
+
+.clients .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -950,11 +949,6 @@ a {
   fill: currentColor;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-/* список соц сетей */
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;

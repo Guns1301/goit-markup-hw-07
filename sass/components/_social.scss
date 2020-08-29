@@ -1,5 +1,3 @@
-/* список соц сетей */
-
 .social-list {
   display: flex;
   height: 44px;
@@ -15,10 +13,10 @@
   color: #afb1b8;
   text-decoration: none;
   text-align: center;
-}
 
-.social-item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-link {
